@@ -48,7 +48,7 @@ def handle_all(request, app):
     
 
 def root_page(request):
-    return render(request, 'firstApp/firstApp.html')
+    return render(request, 'firstApp/firstApp.html', {'test': 'from python'})
 
 
         
