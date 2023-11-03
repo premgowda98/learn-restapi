@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'firstApp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,9 +56,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'firstApp' / 'templates'
+            #BASE_DIR / 'firstApp' / 'templates'
         ],
-        'APP_DIRS': True,
+        'APP_DIRS': True, # this tells django to llok for in app folders
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
