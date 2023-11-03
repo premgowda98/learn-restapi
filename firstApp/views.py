@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
+from django.template.loader import render_to_string
 
 # Create your views here.
 
@@ -48,11 +49,9 @@ def handle_all(request, app):
     
 
 def root_page(request):
-    html = []
-    for i in range(5):
-        html.append(f'<p>{i+1}</p>')
+    response = render_to_string('firstApp/firstApp.html')
 
-    return HttpResponse(' '.join(html))
+    return HttpResponse(response)
 
 
         
