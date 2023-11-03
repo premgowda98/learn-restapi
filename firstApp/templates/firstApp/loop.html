@@ -5,6 +5,7 @@
 {% endblock pageTitle %}
 
 {% block content %}
+    {% include "./includes/navbar.html" %}
     <h1>Testing Loop</h1>
     <ul>
         {% for lst in list_django %}
