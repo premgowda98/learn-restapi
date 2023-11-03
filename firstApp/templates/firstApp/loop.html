@@ -1,11 +1,16 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet", href="{% static "firstApp/firstApp.css" %}">
+{% endblock  %}
 
 {% block pageTitle %}
    Condiionals
 {% endblock pageTitle %}
 
 {% block content %}
-    {% include "./includes/navbar.html" %}
+    {% include "firstApp/includes/navbar.html" %}
     <h1>Testing Loop</h1>
     <ul>
         {% for lst in list_django %}
