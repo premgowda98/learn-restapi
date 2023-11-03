@@ -57,6 +57,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             #BASE_DIR / 'firstApp' / 'templates'
+            BASE_DIR / 'templates' # to handle index/nase html file 
         ],
         'APP_DIRS': True, # this tells django to llok for in app folders
         'OPTIONS': {

@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>firstApp</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block pageTitle %}
+   App Page 
+{% endblock pageTitle %}
+
+{% block content %}
     <h1>Testing Django</h1>
     <h3>Working Fine</h3>
     <h3>Working Fine after adding app in settings file for using templates</h3>
     <h3>Added from from python variables {{ test }}</h3>
-</body>
-</html>
+{% endblock  %}
